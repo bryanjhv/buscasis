@@ -1,0 +1,27 @@
+---
+import { APP_LANG, APP_NAME } from '../consts'
+import '../styles/global.css'
+
+interface Props {
+	title?: string
+}
+
+const { title = '' } = Astro.props
+---
+
+<!doctype html>
+<html lang={APP_LANG}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<title>{`${title && `${title} - `}${APP_NAME}`}</title>
+		<script src="/src/pwa.ts"></script>
+	</head>
+	<body>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.organizeImports": "never"
+	},
+	"editor.formatOnSave": false,
+	"eslint.rules.customizations": [
+		{ "fixable": true, "rule": "style/*", "severity": "off" },
+		{ "fixable": true, "rule": "format/*", "severity": "off" },
+		{ "fixable": true, "rule": "*-indent", "severity": "off" },
+		{ "fixable": true, "rule": "*-spacing", "severity": "off" },
+		{ "fixable": true, "rule": "*-spaces", "severity": "off" },
+		{ "fixable": true, "rule": "*-order", "severity": "off" },
+		{ "fixable": true, "rule": "*-dangle", "severity": "off" },
+		{ "fixable": true, "rule": "*-newline", "severity": "off" },
+		{ "fixable": true, "rule": "*quotes", "severity": "off" },
+		{ "fixable": true, "rule": "*semi", "severity": "off" }
+	],
+	"eslint.validate": [
+		"astro",
+		"css",
+		"javascript",
+		"json",
+		"jsonc",
+		"markdown",
+		"postcss",
+		"typescript"
+	],
+	"npm.packageManager": "npm",
+	"prettier.enable": false,
+	"typescript.tsc.autoDetect": "off",
+	"typescript.tsdk": "node_modules/typescript/lib"
+}

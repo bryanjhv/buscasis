@@ -1,0 +1,30 @@
+---
+import { APP_NAME } from '../consts'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="Inicio">
+	<h2>{APP_NAME}</h2>
+	<form>
+		<p>
+			<input type="search" placeholder="Buscar..." disabled />
+		</p>
+	</form>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th>NOMBRE</th>
+					<th>UBICACIÓN</th>
+					<th>DIRECCIÓN</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="4">Escriba para buscar</td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
+	<script src="./_index.ts"></script>
+</Layout>
