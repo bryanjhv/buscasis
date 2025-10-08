@@ -1,5 +1,6 @@
 {
-	"type": "module",
+	"name": "@bryanjhv/buscasis",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"build": "astro check && astro build",
